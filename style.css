@@ -1,0 +1,17 @@
+h3 {
+    text-transform: capitalize;
+}
+
+.author {
+    font-style: italic;
+}
+
+main {
+    padding: 1rem;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

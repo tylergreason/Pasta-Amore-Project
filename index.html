@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- the head element contains data about the page. Usually this data isn't seen by the user, except with elements such as the title element.  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta elements contain attributes that describe the page, such as the charset, name, and content attributes. -->
+        <title>Pasta Amore</title>
+        <!-- The title element declares our page's title, which is viewable at the top of most browsers either in a tab or while viewing the page. -->
+        <link rel="stylesheet" href="style.css">
+        <!-- the link element allows us to link outside files such as style sheets. -->
+    </head>
+    
+    <body>
+        <!-- the body element is where all elements are rendered. There can only be one body element in the DOM.  -->
+        <header>
+            <!-- the header element contains any heading elements for the current page, but not headers for other parts of the DOM. A page's title goes in the header element. -->
+            <h1>
+                <!-- the h1 element is the largest heading element available. It's best used for a page's title.-->
+                Pasta Amore
+            </h1>
+        </header>
+        <main>
+            
+            <!-- The main element holds page elements that aren't things like navigation, header, or footer. The main element should show the content of this particular page, not the content of static elements that appear on all pages of the website.  -->
+            <section class="about">
+                <!-- section elements divide the page into sensible sections. There may be more semantically appropriate elements to use in place of a section element (like an article element), but if not, the section element helps organize the page.  -->
+            <h3>
+                    <!-- the h3 element is another header element, third in the hierarchy of headers going from largest (h1) to smallest (h6). -->
+                    <i>
+                        <!-- the i element is the Idiomatic Text element (formally referred to as the Italic element). It is used for italicizing text. -->
+                        Our Mission Statement:
+                    </i>
+                </h3>
+                <blockquote>
+                    
+                    To provide a warm atmosphere for your family where we can share the traditional cuisines of Italy. Our food will always be fun, fresh and filled with love.
+                </blockquote>
+                
+                <h3>
+                    <i>
+                        Our Vision
+                    </i>
+                </h3>
+                <p>
+                    <!-- paragraph elements make up the bulk of text elements on a page. They are block elements, so each paragraph element will create a new line below it when it closes (</p>). -->
+                    Pasta Amore combines the cooking traditions and ingredients of Italy with creativity, providing a <b>modern twist</b> on <b>timeless classics</b>.
+                </p>
+                <p>
+                    Our vision for the future is to <b>grow</b> and <b>learn</b> along with our customers. In doing so, we aim to provide an atmosphere that enables this growth and fuels the passion that lives within the essence of the brand.
+                </p>
+                <p>
+                    The approach of Pasta Amore is to develop our brand with the understanding of both our culture and consumer insights. Within our vision always lives the promise of inspiring <b>creativity</b>, <b>conversation</b> and <b>quality</b>.
+                </p>
+            </section>
+            
+            <section>
+                <h3>What our customers say</h3>
+                <blockquote>"It's the best!"</blockquote>
+                <!-- The blockquote element is used for indenting text to make the text display like a quote. -->
+                <!-- cite elements usually follow blockquote elements to indicate the source of the quote. -->
+                <!-- The blockquote and cite elements are perfect examples of the wide array of elements available in HTML 5 for specific purposes. Elements common to most pages have their own representation, such as headers, paragraphs, lists, and quotes. -->
+                <cite class="author">- Jane Doe</cite>
+                
+            <blockquote>"We always come here when family is in town. It's classic, authentic Italian"!</blockquote>
+            <cite class="author">- Jane Doe</cite>
+
+            <blockquote>"It's the best!"</blockquote>
+            <cite class="author">- Jane Doe</cite>
+            </section>
+        </main>
+    </body>
+</html>
