@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- the head element contains data about the page. Usually this data isn't seen by the user, except with elements such as the title element.  -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- meta elements contain attributes that describe the page, such as the charset, name, and content attributes. -->
         <title>Pasta Amore</title>
-        <!-- The title element declares our page's title, which is viewable at the top of most browsers either in a tab or while viewing the page. -->
         <link rel="stylesheet" href="CSS/style.css">
-        <!-- the link element allows us to link outside files such as style sheets. -->
     </head>
     
     <body>
-        <!-- the body element is where all elements are rendered. There can only be one body element in the DOM.  -->
-        <header>
-            <!-- the header element contains any heading elements for the current page, but not headers for other parts of the DOM. A page's title goes in the header element. -->
-            <h1>
-                <!-- the h1 element is the largest heading element available. It's best used for a page's title.-->
-                Pasta <div class="green-text">Amore</div>
-            </h1>
+
+        <header class="new-header">
+           <h1>Pasta <span class="green-text">Amore</span></h1>
+           <ul class="menu">
+            <li>
+                <a href="#">Menu</a>
+            </li>
+            <li>
+                <a href="#">Drinks</a>
+            </li>
+            <li>
+                <a href="#">Catering</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">Order Online</a>
+            </li>
+        </ul>
         </header>
+
+
         <main>
             
-            <!-- The main element holds page elements that aren't things like navigation, header, or footer. The main element should show the content of this particular page, not the content of static elements that appear on all pages of the website.  -->
             <section class="about">
-                <!-- section elements divide the page into sensible sections. There may be more semantically appropriate elements to use in place of a section element (like an article element), but if not, the section element helps organize the page.  -->
             <h3>
-                    <!-- the h3 element is another header element, third in the hierarchy of headers going from largest (h1) to smallest (h6). -->
-                        Our <span class="green-text">Mission Statement</span>:
+                        Our <span class="green-text">Mission Statement</span>
                 </h3>
                 <blockquote>
                     
@@ -38,7 +46,6 @@
                         Our <span class="green-text">Vision</span>
                 </h3>
                 <p>
-                    <!-- paragraph elements make up the bulk of text elements on a page. They are block elements, so each paragraph element will create a new line below it when it closes (</p>). -->
                     Pasta Amore combines the cooking traditions and ingredients of Italy with creativity, providing a <span class="bold-text">modern twist</span> on <span class="bold-text">timeless classics</span>.
                 </p>
                 <p>
@@ -52,9 +59,6 @@
             <section>
                 <h3>What <span class="green-text">our customers say</span></h3>
                 <blockquote>"It's the best!"</blockquote>
-                <!-- The blockquote element is used for indenting text to make the text display like a quote. -->
-                <!-- cite elements usually follow blockquote elements to indicate the source of the quote. -->
-                <!-- The blockquote and cite elements are perfect examples of the wide array of elements available in HTML 5 for specific purposes. Elements common to most pages have their own representation, such as headers, paragraphs, lists, and quotes. -->
                 <cite class="author">- Jane Doe</cite>
                 
             <blockquote>"We always come here when family is in town. It's classic, authentic Italian"!</blockquote>
