@@ -5,6 +5,11 @@
     --leafy-green: #0B9446;
     --cafe: #7b573e;
     --cannoli: #D8C6B8;
+    font-family: Goudy Old Style;
+}
+
+body {
+    padding-bottom: 1rem;
 }
 
 h3 {
@@ -27,11 +32,15 @@ main {
 
 header {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    color: var(--marinara-red);
     text-align: center;
-    font-size: 1.5rem;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header h1 {
+    color: var(--marinara-red);
 }
 
 .green-text {
@@ -40,4 +49,53 @@ header {
 
 .bold-text {
     font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 1rem;
+    width: 50vw;
+}
+
+.menu li a {
+    padding: 0rem 1rem;
+    flex-grow: 1;
+    color: var(--cafe)
+}
+
+
+#hero-image {
+    position: relative;
+    text-align: center;
+}
+
+#hero-image img {
+    max-width: 100%;
+    opacity: .5;
+}
+
+#hero-image div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about {
+    width: 80%;
+    margin: auto;
+    color: var(--wine);
+}
+
+blockquote {
+    color: var(--espresso);
 }
