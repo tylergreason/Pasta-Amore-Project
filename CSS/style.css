@@ -5,6 +5,7 @@
     --leafy-green: #0B9446;
     --cafe: #7b573e;
     --cannoli: #D8C6B8;
+    font-family: Goudy Old Style;
 }
 
 h3 {
@@ -58,4 +59,9 @@ header h1 {
     padding: 0rem 1rem;
     flex-grow: 1;
     color: var(--cafe)
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
 }
