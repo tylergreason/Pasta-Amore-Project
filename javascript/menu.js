@@ -159,7 +159,7 @@ let sections = [];
 for (const key in foodData) {
 	const newSection = document.createElement('section');
 	newSection.classList.add(key.replaceAll(' ', '-'));
-	const header = document.createElement('h3');
+	const header = document.createElement('h2');
 	header.textContent = key;
 	header.classList.add('section-title');
 	newSection.appendChild(header);

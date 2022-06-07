@@ -29,6 +29,16 @@ body {
 	height: 100vh;
 }
 
+#background {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+	opacity: 0.7;
+}
+
 div.logo-container {
 	width: 10rem;
 	height: inherit;
@@ -50,6 +60,10 @@ main {
 	flex-flow: column;
 	max-width: 50rem;
 	margin: auto;
+}
+
+main h1.page-title {
+	font-size: 3rem;
 }
 
 header {
@@ -119,7 +133,7 @@ header a.active-page {
 footer {
 	display: flex;
 	justify-content: space-around;
-	padding-bottom: 1rem;
+	padding: 5rem 0 1rem 0;
 }
 
 .about {
@@ -137,8 +151,6 @@ blockquote {
 #menu {
 	max-width: 50rem;
 	margin: auto;
-	border: 1px solid tomato;
-	padding: 1rem;
 }
 
 .menu-wrapper {
@@ -149,12 +161,15 @@ blockquote {
 
 .menu-wrapper .section-title {
 	text-align: center;
+	font-size: 2rem;
+	color: var(--marinara-red);
 }
 
 div.menu-items {
 	display: flex;
 	justify-content: space-evenly;
 	flex-flow: row wrap;
+	margin-bottom: 5rem;
 }
 
 #menu div.menu-item {
