@@ -18,6 +18,14 @@
 	font-family: 'klinic-slab-book';
 }
 
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
 .klinic-bold {
 	font-family: klinic-slab-bold;
 }
@@ -25,7 +33,7 @@
 body {
 	display: flex;
 	flex-flow: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	height: 100vh;
 }
 
@@ -56,9 +64,11 @@ h3 {
 main {
 	padding: 1rem;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-flow: column;
-	max-width: 50rem;
+	max-width: 60rem;
+	height: 100%;
+	width: 100%;
 	margin: auto;
 }
 
@@ -100,7 +110,6 @@ header h1 {
 	padding: 0rem 1rem;
 	flex-grow: 1;
 	color: var(--cafe);
-	text-decoration: none;
 }
 
 header a.active-page:hover {
@@ -150,7 +159,6 @@ blockquote {
 /* MENU PAGE: */
 
 #menu {
-	max-width: 50rem;
 	margin: auto;
 }
 
@@ -173,6 +181,11 @@ div.menu-items {
 	margin-bottom: 5rem;
 }
 
+div.menu-item .price {
+	font-style: italic;
+	color: var(--cafe);
+}
+
 #menu div.menu-item {
 	max-width: 15rem;
 	margin: 1.5rem 1.5rem 0 0;
@@ -192,4 +205,49 @@ div.title-row span.title {
 
 #menu div.menu-item div.description {
 	font-style: italic;
+}
+
+/* Online Ordering */
+
+.ordering-services {
+	display: flex;
+	justify-content: space-around;
+}
+
+.ordering-services a {
+	color: var(--wine);
+}
+
+.ordering-service {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+i.order-service-icon {
+	display: block;
+	width: 7rem;
+	height: 7rem;
+	padding: 1rem;
+}
+
+.ordering-service div {
+	font-size: 2rem;
+}
+#food-shop-icon {
+	fill: #e3b64b;
+	stroke: #000;
+	stroke-width: 1rem;
+}
+
+#grub-to-you-icon {
+	fill: #e38b4b;
+	stroke: #804e00;
+	stroke-width: 1rem;
+}
+
+#fast-dash-icon {
+	fill: #237d28;
+	stroke: #9b8222;
+	stroke-width: 1rem;
 }
