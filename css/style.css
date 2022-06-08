@@ -64,6 +64,7 @@ main {
 
 main h1.page-title {
 	font-size: 3rem;
+	color: var(--wine);
 }
 
 header {
