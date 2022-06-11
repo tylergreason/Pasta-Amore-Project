@@ -72,9 +72,10 @@ main {
 	flex-grow: 1;
 }
 
-main h1.page-title {
-	font-size: 3rem;
+main h1.main-title {
+	font-size: 4rem;
 	color: var(--wine);
+	text-align: center;
 }
 
 header {
@@ -151,6 +152,7 @@ footer {
 	width: 80%;
 	margin: auto;
 	color: var(--wine);
+	padding: 1rem 0;
 }
 
 blockquote {
