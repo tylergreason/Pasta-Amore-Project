@@ -67,9 +67,9 @@ main {
 	justify-content: flex-start;
 	flex-flow: column;
 	max-width: 60rem;
-	height: 100%;
 	width: 100%;
 	margin: auto;
+	flex-grow: 1;
 }
 
 main h1.page-title {
@@ -138,6 +138,7 @@ header a.active-page {
 	transform: translate(-50%, -50%);
 	font-size: 1.2rem;
 	font-weight: bold;
+	line-height: 2rem;
 }
 
 footer {
@@ -184,6 +185,7 @@ div.menu-items {
 div.menu-item .price {
 	font-style: italic;
 	color: var(--cafe);
+	font-weight: bold;
 }
 
 #menu div.menu-item {
