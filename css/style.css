@@ -1,257 +1,258 @@
 @font-face {
-	font-family: klinic-slab-book;
-	src: url('../fonts/KlinicSlabBook.otf');
+  font-family: klinic-slab-book;
+  src: url('../fonts/KlinicSlabBook.otf');
 }
 
 @font-face {
-	font-family: klinic-slab-bold;
-	src: url('../fonts/KlinicSlabBold.otf');
+  font-family: klinic-slab-bold;
+  src: url('../fonts/KlinicSlabBold.otf');
 }
 
 :root {
-	--marinara-red: #cf1c44;
-	--wine: #5e1211;
-	--espresso: #543136;
-	--leafy-green: #0b9446;
-	--cafe: #7b573e;
-	--cannoli: #d8c6b8;
-	font-family: 'klinic-slab-book';
+  --marinara-red: #cf1c44;
+  --wine: #5e1211;
+  --espresso: #543136;
+  --leafy-green: #0b9446;
+  --cafe: #7b573e;
+  --cannoli: #d8c6b8;
+  font-family: 'klinic-slab-book';
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .klinic-bold {
-	font-family: klinic-slab-bold;
+  font-family: klinic-slab-bold;
 }
 
 body {
-	display: flex;
-	flex-flow: column;
-	justify-content: flex-start;
-	height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  height: 100vh;
 }
 
 #background {
-	position: fixed;
-	left: 0;
-	top: 0;
-	height: 100vh;
-	width: 100vw;
-	z-index: -1;
-	opacity: 0.7;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.7;
 }
 
 div.logo-container {
-	width: 10rem;
-	height: inherit;
+  width: 10rem;
+  height: inherit;
 }
 
 h3 {
-	text-transform: capitalize;
-	color: var(--marinara-red);
+  text-transform: capitalize;
+  color: var(--marinara-red);
 }
 
 .author {
-	font-style: italic;
+  font-style: italic;
 }
 
 main {
-	padding: 1rem;
-	display: flex;
-	justify-content: flex-start;
-	flex-flow: column;
-	max-width: 60rem;
-	width: 100%;
-	margin: auto;
-	flex-grow: 1;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  max-width: 60rem;
+  width: 100%;
+  margin: auto;
+  flex-grow: 1;
 }
 
 main h1.main-title {
-	font-size: 4rem;
-	color: var(--wine);
-	text-align: center;
+  font-size: 4rem;
+  color: var(--wine);
+  text-align: center;
 }
 
 header {
-	width: 100%;
-	text-align: center;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 1rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 header h1 {
-	color: var(--marinara-red);
+  color: var(--marinara-red);
 }
 
 .green-text {
-	color: var(--leafy-green);
+  color: var(--leafy-green);
 }
 
 .bold-text {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .navigation {
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	padding: 0.2rem 1rem;
-	width: 50vw;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 1rem;
+  width: 40vw;
 }
 
 .navigation li a {
-	padding: 0rem 1rem;
-	flex-grow: 1;
-	color: var(--cafe);
+  padding: 0rem 1rem;
+  flex-grow: 1;
+  color: var(--cafe);
 }
 
 header a.active-page:hover {
-	pointer-events: none;
-	color: var(--marinara-red);
+  pointer-events: none;
+  color: var(--marinara-red);
 }
 
 header a.active-page {
-	color: var(--marinara-red);
+  color: var(--marinara-red);
+  text-decoration: underline;
 }
 
 #hero-image {
-	position: relative;
-	text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 #hero-image img {
-	max-width: 100%;
-	opacity: 0.5;
+  max-width: 100%;
+  opacity: 0.5;
 }
 
 #hero-image div {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 1.2rem;
-	font-weight: bold;
-	line-height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2rem;
 }
 
 footer {
-	display: flex;
-	justify-content: space-around;
-	padding: 5rem 0 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 0 1rem 0;
 }
 
 .about {
-	width: 80%;
-	margin: auto;
-	color: var(--wine);
-	padding: 1rem 0;
+  width: 80%;
+  margin: auto;
+  color: var(--wine);
+  padding: 1rem 0;
 }
 
 blockquote {
-	color: var(--espresso);
+  color: var(--espresso);
 }
 
 /* MENU PAGE: */
 
 #menu {
-	margin: auto;
+  margin: auto;
 }
 
 .menu-wrapper {
-	display: flex;
-	justify-content: start;
-	flex-flow: column;
+  display: flex;
+  justify-content: start;
+  flex-flow: column;
 }
 
 .menu-wrapper .section-title {
-	text-align: center;
-	font-size: 2rem;
-	color: var(--marinara-red);
+  text-align: center;
+  font-size: 2rem;
+  color: var(--marinara-red);
 }
 
 div.menu-items {
-	display: flex;
-	justify-content: space-evenly;
-	flex-flow: row wrap;
-	margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  margin-bottom: 5rem;
 }
 
 div.menu-item .price {
-	font-style: italic;
-	color: var(--cafe);
-	font-weight: bold;
+  font-style: italic;
+  color: var(--cafe);
+  font-weight: bold;
 }
 
 #menu div.menu-item {
-	max-width: 15rem;
-	margin: 1.5rem 1.5rem 0 0;
-	width: 100%;
+  max-width: 15rem;
+  margin: 1.5rem 1.5rem 0 0;
+  width: 100%;
 }
 
 #menu div.menu-item div.title-row {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 div.title-row span.title {
-	font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 #menu div.menu-item div.description {
-	font-style: italic;
+  font-style: italic;
 }
 
 /* Online Ordering */
 
 .ordering-services {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .ordering-services a {
-	color: var(--wine);
+  color: var(--wine);
 }
 
 .ordering-service {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 i.order-service-icon {
-	display: block;
-	width: 7rem;
-	height: 7rem;
-	padding: 1rem;
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  padding: 1rem;
 }
 
 .ordering-service div {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 #food-shop-icon {
-	fill: #e3b64b;
-	stroke: #000;
-	stroke-width: 1rem;
+  fill: #e3b64b;
+  stroke: #000;
+  stroke-width: 1rem;
 }
 
 #grub-to-you-icon {
-	fill: #e38b4b;
-	stroke: #804e00;
-	stroke-width: 1rem;
+  fill: #e38b4b;
+  stroke: #804e00;
+  stroke-width: 1rem;
 }
 
 #fast-dash-icon {
-	fill: #237d28;
-	stroke: #9b8222;
-	stroke-width: 1rem;
+  fill: #237d28;
+  stroke: #9b8222;
+  stroke-width: 1rem;
 }
