@@ -18,6 +18,16 @@
   font-family: 'klinic-slab-book';
 }
 
+p,
+div,
+span,
+blockquote,
+cite,
+li,
+a {
+  font-size: 1.2rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -72,10 +82,10 @@ main {
   flex-grow: 1;
 }
 
-main h1.main-title {
+h1.page-title {
   font-size: 4rem;
-  color: var(--wine);
   text-align: center;
+  width: 100%;
 }
 
 header {
@@ -85,10 +95,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-}
-
-header h1 {
-  color: var(--marinara-red);
 }
 
 .green-text {
@@ -107,18 +113,15 @@ header h1 {
   width: 40vw;
 }
 
-.navigation li a {
+.navigation li a,
+.active-page {
   padding: 0rem 1rem;
   flex-grow: 1;
-  color: var(--cafe);
+  color: var(--espresso);
+  font-weight: bold;
 }
 
-header a.active-page:hover {
-  pointer-events: none;
-  color: var(--marinara-red);
-}
-
-header a.active-page {
+span.active-page {
   color: var(--marinara-red);
   text-decoration: underline;
 }
@@ -128,19 +131,20 @@ header a.active-page {
   text-align: center;
 }
 
-#hero-image img {
+h1 + img {
   max-width: 100%;
-  opacity: 0.5;
+  max-height: 80%;
+  object-fit: cover;
 }
 
 #hero-image div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 2rem;
+}
+
+.testimonials {
+  color: black;
 }
 
 footer {
@@ -154,10 +158,6 @@ footer {
   margin: auto;
   color: var(--wine);
   padding: 1rem 0;
-}
-
-blockquote {
-  color: var(--espresso);
 }
 
 /* MENU PAGE: */
@@ -174,7 +174,7 @@ blockquote {
 
 .menu-wrapper .section-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--marinara-red);
 }
 
@@ -210,6 +210,7 @@ div.title-row span.title {
 
 #menu div.menu-item div.description {
   font-style: italic;
+  font-size: 1rem;
 }
 
 /* Online Ordering */
