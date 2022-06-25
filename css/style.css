@@ -44,12 +44,9 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  height: 100vh;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 255),
-    rgba(255, 255, 255, 0)
-  );
+  height: 100%;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #background {
@@ -59,12 +56,16 @@ body {
   height: 100vh;
   width: 100vw;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 div.logo-container {
-  width: 10rem;
+  width: 15rem;
   height: inherit;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 h3 {
@@ -85,7 +86,7 @@ main {
   display: flex;
   justify-content: flex-start;
   flex-flow: column;
-  max-width: 60rem;
+  max-width: 65rem;
   width: 100%;
   margin: auto;
   flex-grow: 1;
@@ -103,7 +104,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 1rem;
+}
+
+header,
+footer {
+  /* background: url('../images/parchment-reduced.webp'); */
 }
 
 .green-text {
@@ -159,7 +165,7 @@ h1 + img {
 footer {
   display: flex;
   justify-content: space-around;
-  padding: 5rem 0 1rem 0;
+  padding: 1rem 0;
 }
 
 footer a:visited,
@@ -219,12 +225,12 @@ div.menu-item .price {
 }
 
 div.title-row span.title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 #menu div.menu-item div.description {
   font-style: italic;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* Online Ordering */
